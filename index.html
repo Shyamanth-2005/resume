@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+      <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="nav">
+        <a href="#home" class="logo">SR</a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#summary">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <div class="container">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+          <div class="hero-content">
+            <h1>Shyamanth Reddy M</h1>
+            <p class="subtitle">AI & ML Specialist | Full-Stack Developer</p>
+            <div class="contact-info">
+              <div class="contact-item">
+                <i
+                  class="fas fa-map-marker-alt"
+                  aria-label="Location"
+                  title="Location"
+                ></i>
+                <span>Chennai, India 603103</span>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-phone" aria-label="Phone" title="Phone"></i>
+                <a href="tel:+919600462463">+91 9600462463</a>
+              </div>
+              <div class="contact-item">
+                <i class="fas fa-envelope" aria-label="Email" title="Email"></i>
+                <a href="mailto:shyamanthreddy.m@gmail.com"
+                  >shyamanthreddy.m@gmail.com</a
+                >
+              </div>
+              <div class="contact-item">
+                <i class="fab fa-github" aria-label="GitHub" title="GitHub"></i>
+                <a href="https://github.com/Shyamanth-2005" target="_blank"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Summary Section -->
+        <section id="summary" class="section">
+          <h2><i class="fas fa-user"></i> About Me</h2>
+          <p
+            style="
+              font-size: 1.1rem;
+              text-align: center;
+              max-width: 800px;
+              margin: 0 auto;
+              color: #666;
+            "
+          >
+            Detail-oriented and adaptable Computer Science undergraduate
+            specializing in <strong>AI & ML</strong>. Skilled in
+            <strong
+              >software development, data science, and deep learning
+              frameworks</strong
+            >, with proven experience in building full-stack applications and
+            ML-powered solutions. Strong collaborator with leadership
+            experience, capable of delivering impactful projects in fast-paced
+            environments. Seeking <strong>internship opportunities</strong> to
+            apply technical expertise and problem-solving skills in real-world
+            settings.
+          </p>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section">
+          <h2><i class="fas fa-code"></i> Technical Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>
+                <i class="fas fa-laptop-code"></i> Programming & Scripting
+              </h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">SQL</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS (Tailwind)</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React.js</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-server"></i> Backend & Databases</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express.js</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">REST APIs</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-chart-bar"></i> Data Science & ML</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Pandas</span>
+                <span class="skill-tag">NumPy</span>
+                <span class="skill-tag">Scikit-learn</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">Data Analysis</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-brain"></i> Deep Learning</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">PyTorch</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-tools"></i> Developer Tools</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">LangChain</span>
+                <span class="skill-tag">ChromaDB</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+          <h2><i class="fas fa-briefcase"></i> Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Interdisciplinary Technical Intern</h3>
+              <div class="timeline-meta">
+                FlyBrand Digital Solutions – Chennai, India | Jun 2025 – Jul
+                2025
+              </div>
+              <ul>
+                <li>
+                  Researched and authored beginner-friendly technical content on
+                  <strong
+                    >AI applications in Civil, Mechanical, and Electronics
+                    Engineering</strong
+                  >, improving accessibility for non-CS audiences.
+                </li>
+                <li>
+                  Designed structured content and presentations for
+                  <strong>AI awareness campaigns</strong>, reaching and
+                  educating over 200+ engineering students.
+                </li>
+                <li>
+                  Demonstrated
+                  <strong>cross-domain research and technical skills</strong>,
+                  bridging AI with core engineering disciplines.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+          <h2><i class="fas fa-rocket"></i> Projects</h2>
+          <div class="project-grid">
+            <div class="project-card">
+              <h3>Retrieval-Augmented Question Answering Chatbot</h3>
+              <div class="tech-stack">
+                <strong>Technologies:</strong> Python, Streamlit, LangChain,
+                ChromaDB, Ollama, PyMuPDF, Llama 3
+              </div>
+              <ul style="position: relative; z-index: 2">
+                <li>
+                  Developed a <strong>RAG-based chatbot</strong> capable of
+                  answering queries directly from uploaded PDF documents,
+                  improving knowledge retrieval efficiency.
+                </li>
+                <li>
+                  Built an
+                  <strong>interactive Streamlit web interface</strong> with
+                  real-time answer streaming and file upload support.
+                </li>
+                <li>
+                  Implemented <strong>LangChain pipeline</strong> for document
+                  parsing, chunking, and metadata management, integrated with
+                  <strong>ChromaDB</strong> for semantic search.
+                </li>
+                <li>
+                  Optimized query performance and UI responsiveness, enhancing
+                  user experience in real-time document-based QA.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-card">
+              <h3>Budgetify – Personal Budget Tracker</h3>
+              <div class="tech-stack">
+                <strong>Technologies:</strong> React.js, Tailwind CSS, Chart.js,
+                Node.js, Express.js, MongoDB, JWT, Axios, xlsx
+              </div>
+              <ul style="position: relative; z-index: 2">
+                <li>
+                  Engineered a
+                  <strong>full-stack personal finance tracker</strong> to manage
+                  income/expenses with dashboards, reports, and interactive
+                  charts.
+                </li>
+                <li>
+                  Built secure <strong>JWT authentication</strong> with
+                  protected routes and session persistence.
+                </li>
+                <li>
+                  Implemented <strong>CRUD operations</strong> for
+                  income/expenses with Excel export functionality, enabling
+                  seamless data backup and sharing.
+                </li>
+                <li>
+                  Optimized for
+                  <strong>mobile responsiveness and usability</strong>,
+                  resulting in a smoother experience across devices.
+                </li>
+              </ul>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Shyamanth-2005/Budgetify"
+                  class="project-link"
+                  ><i class="fab fa-github"></i> GitHub Repo</a
+                >
+                <a
+                  href="https://www.youtube.com/watch?v=dHLjXs84J0s"
+                  class="project-link"
+                  ><i class="fas fa-video"></i> Demo Video</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+          <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Vellore Institute of Technology (VIT), Chennai</h3>
+              <div class="timeline-meta">
+                B.Tech in Computer Science with specialization in AI & ML |
+                Expected Jun 2027
+                <p><b>CGPA: 8.48</b></p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <h3>Padma Seshadri Bala Bhavan, Chennai</h3>
+              <div class="timeline-meta">
+                12<sup>th</sup> standard (CBSE Board) | Apr 2023
+                <p><b>Percentage: 90.8%</b></p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <h3>Padma Seshadri Bala Bhavan, Chennai</h3>
+              <div class="timeline-meta">
+                10<sup>th</sup> standard (CBSE Board) | Apr 2023
+                <p><b>Percentage: 93.8%</b></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Leadership Section -->
+        <section id="leadership" class="section">
+          <h2><i class="fas fa-users"></i> Leadership & Activities</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>TEDx Club – VIT Chennai</h3>
+              <div class="timeline-meta">
+                Overall Coordinator & Treasurer | Jan 2024 – Present
+              </div>
+              <ul>
+                <li>
+                  Coordinated end-to-end execution of
+                  <strong>TEDx events</strong>, including speaker curation,
+                  logistics, and audience engagement.
+                </li>
+                <li>
+                  Managed <strong>club finances</strong>, ensuring transparency
+                  and optimized budget allocation for high-impact events.
+                </li>
+                <li>
+                  Fostered cross-team collaboration and inclusivity while
+                  balancing leadership with academics.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <footer
+      style="
+        text-align: center;
+        color: #fff;
+        margin: 2rem 0 1rem 0;
+        opacity: 0.7;
+      "
+    >
+      &copy; Shyamanth Reddy M [<span id="year"></span>]
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
