@@ -508,6 +508,122 @@ body {
   }
 }
 
+/* Responsive Enhancements */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .main {
+    padding: 0 1rem;
+  }
+  .hero-content {
+    padding: 2rem;
+  }
+  .section {
+    padding: 2rem 1rem;
+  }
+  .skills-grid,
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Large Phones (max-width: 600px) */
+@media (max-width: 600px) {
+  .header {
+    padding: 0.7rem 0;
+  }
+  .nav {
+    padding: 0 1rem;
+  }
+  .logo {
+    font-size: 1.2rem;
+  }
+  .hero-content {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .section {
+    padding: 1rem 0.5rem;
+    border-radius: 12px;
+  }
+  .skills-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .skill-category,
+  .project-card {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  .timeline {
+    padding-left: 1rem;
+  }
+  .timeline-item {
+    padding-left: 1rem;
+  }
+  .scroll-top {
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+/* Very Small Devices (max-width: 400px) */
+@media (max-width: 400px) {
+  .main {
+    margin-top: 60px;
+    padding: 0 0.2rem;
+  }
+  .hero-content {
+    padding: 0.5rem;
+  }
+  .section {
+    padding: 0.5rem 0.2rem;
+  }
+  .skills-grid,
+  .project-grid {
+    gap: 0.5rem;
+  }
+  .skill-category,
+  .project-card {
+    padding: 0.5rem;
+  }
+  .scroll-top {
+    padding: 0.6rem;
+  }
+}
+
+/* Improve nav-links tap targets for mobile */
+.nav-links a {
+  padding: 0.7rem 0.5rem;
+  font-size: 1rem;
+}
+
+/* Make timeline dots smaller on mobile */
+@media (max-width: 600px) {
+  .timeline-item::before {
+    width: 8px;
+    height: 8px;
+    left: -1rem;
+    top: 0.4rem;
+    box-shadow: 0 0 0 2px #667eea;
+  }
+}
+
+/* Ensure footer is readable on all screens */
+footer {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  word-break: break-word;
+}
+
 /* Scroll to Top Button */
 .scroll-top {
   position: fixed;
